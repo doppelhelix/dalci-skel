@@ -1,0 +1,127 @@
+#!/bin/bash
+# shellcheck shell=bash
+set -euxo pipefail
+
+color_scheme() {
+    if [ ! -x "$(command -v plasma-apply-lookandfeel)" ]; then
+         notify-send \
+         'Missing dependency' \
+         'plasma-apply-lookandfeel\nnot found.\nPlease install kwin.' \
+        -h string:x-canonical-private-synchronous:sys-notify \
+        -u critical \
+        -i dialog-error
+        return 1
+    fi
+    if [ ! -x "$(command -v gsettings)" ]; then
+         notify-send \
+         'Missing dependency' \
+         'gsettings not found.\nOMG Why?\nHow did you fuck up like this?\nPlease install glib2.' \
+        -h string:x-canonical-private-synchronous:sys-notify \
+        -u critical \
+        -i dialog-error
+        return 1
+    fi
+    #gtk-theme
+    gsettings set org.gnome.desktop.interface color-scheme "$COLOR_SCHEME"
+    gsettings set org.gnome.desktop.interface gtk-theme "$GTK_THEME"
+    gsettings set org.gnome.desktop.interface icon-theme "$ICON_THEME"
+
+    #GTK2
+    if [[ -w "$HOME/.gtkrc-2.0" ]]; then
+        sed -i "s/gtk-theme-name=.*/gtk-theme-name=$GTK_THEME/g" \
+            "$HOME/.gtkrc-2.0"
+        sed -i "s/gtk-icon-theme-name=.*/gtk-icon-theme-name=$ICON_THEME/g" \
+            "$HOME/.gtkrc-2.0"
+    fi
+    #GTK3
+    if [[ -w "$HOME/.config/gtk-3.0/settings.ini" ]]; then
+        sed -i "s/gtk-application-prefer-dark-theme=.*/gtk-application-prefer-dark-theme=$DARK_THEME/g" \
+            "$HOME/.config/gtk-3.0/settings.ini"
+        sed -i "s/gtk-theme-name=.*/gtk-theme-name=$GTK_THEME/g" \
+            "$HOME/.config/gtk-3.0/settings.ini"
+        sed -i "s/gtk-icon-theme-name=.*/gtk-icon-theme-name=$ICON_THEME/g" \
+            "$HOME/.config/gtk-3.0/settings.ini"
+    fi
+    #GTK4
+    if [[ -w "$HOME/.config/gtk-4.0/settings.ini" ]]; then
+        sed -i "s/gtk-application-prefer-dark-theme=.*/gtk-application-prefer-dark-theme=$DARK_THEME/g" \
+            "$HOME/.config/gtk-4.0/settings.ini"
+        sed -i "s/gtk-icon-theme-name=.*/gtk-icon-theme-name=$ICON_THEME/g" \
+            "$HOME/.config/gtk-4.0/settings.ini"
+        sed -i "s/gtk-theme-name=.*/gtk-theme-name=$GTK_THEME/g" \
+            "$HOME/.config/gtk-4.0/settings.ini"
+    fi
+    #qt-theme
+    plasma-apply-lookandfeel -a "$LOOKANDFEEL"
+    /usr/lib/plasma-changeicons "$ICON_THEME"
+    if [[ -w "$HOME/.config/qt5ct/qt5ct.conf" ]]; then
+        sed -i "s/icon_theme=.*/icon_theme=$ICON_THEME/g" \
+            "$HOME/.config/qt5ct/qt5ct.conf"
+        sed -i "s/custom_palette=.*/custom_palette=$DARK_THEME/g" \
+            "$HOME/.config/qt5ct/qt5ct.conf"
+    fi
+    if [[ -w "$HOME/.config/qt6ct/qt6ct.conf" ]]; then
+        sed -i "s/icon_theme=.*/icon_theme=$ICON_THEME/g" \
+            "$HOME/.config/qt6ct/qt6ct.conf"
+        sed -i "s/custom_palette=.*/custom_palette=$DARK_THEME/g" \
+            "$HOME/.config/qt6ct/qt6ct.conf"
+    fi
+}
+
+switch_color_scheme() {
+    COLOR_SCHEME=$(gsettings get org.gnome.desktop.interface color-scheme)
+
+    if [[ ! $COLOR_SCHEME == ''\''prefer-dark'\''' ]]; then
+        COLOR_SCHEME=prefer-dark
+        DARK_THEME=true
+        GTK_THEME=adw-gtk3-dark
+        ICON_THEME=Papirus-Dark
+        LOOKANDFEEL=org.kde.breeze-papirus-dark.desktop
+        color_scheme
+    else
+        COLOR_SCHEME=prefer-light
+        DARK_THEME=false
+        GTK_THEME=adw-gtk3
+        ICON_THEME=Papirus
+        LOOKANDFEEL=org.kde.breeze-papirus-twilight.desktop
+        color_scheme
+    fi
+}
+
+set_color_scheme() {
+    COLOR_SCHEME=$(gsettings get org.gnome.desktop.interface color-scheme)
+
+    if [[ ! $COLOR_SCHEME == ''\''prefer-dark'\''' ]]; then
+        COLOR_SCHEME=prefer-light
+        DARK_THEME=false
+        GTK_THEME=adw-gtk3
+        ICON_THEME=Papirus
+        LOOKANDFEEL=org.kde.breeze-papirus-twilight.desktop
+        color_scheme
+    else
+        COLOR_SCHEME=prefer-dark
+        DARK_THEME=true
+        GTK_THEME=adw-gtk3-dark
+        ICON_THEME=Papirus-Dark
+        LOOKANDFEEL=org.kde.breeze-papirus-dark.desktop
+        color_scheme
+    fi
+}
+
+keyhint() {
+    if [ -x ~/.config/hypr/scripts/keyhint.sh ]; then
+        ~/.config/hypr/scripts/keyhint.sh
+    fi
+}
+
+# Check if the function exists (bash specific)
+if declare -f "$1" >/dev/null; then
+    # call arguments verbatim
+    "$@"
+else
+    # Show a helpful error
+    echo "'$1' is not a known function name" >&2
+    exit 1
+fi
+
+# vim: set ts=4 sw=4 et:

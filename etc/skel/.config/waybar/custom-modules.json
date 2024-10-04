@@ -1,0 +1,12 @@
+{
+    "include": [
+        "~/.config/waybar/custom/clock.json",
+        "~/.config/waybar/custom/keyboard.json",
+        "~/.config/waybar/custom/application_drawer.json",
+        "~/.config/waybar/custom/lock_screen.json",
+        "~/.config/waybar/custom/mpris.json",
+        "~/.config/waybar/custom/power_btn.json",
+        "~/.config/waybar/custom/theme.json",
+        "~/.config/waybar/custom/update.json"
+  ]
+}

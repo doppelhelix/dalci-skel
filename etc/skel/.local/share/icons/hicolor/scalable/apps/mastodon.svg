@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 135.467 135.467">
+  <defs>
+    <filter id="a" width="1.144" height="1.148" x="-.072" y="-.067" color-interpolation-filters="sRGB">
+      <feFlood flood-color="#000" flood-opacity="1" result="flood"/>
+      <feComposite in="flood" in2="SourceGraphic" operator="in" result="composite1"/>
+      <feGaussianBlur in="composite1" result="blur" stdDeviation="3"/>
+      <feOffset dy="1.5" result="offset"/>
+      <feComposite in="SourceGraphic" in2="offset" result="composite2"/>
+    </filter>
+    <filter id="b" width="1.075" height="1.112" x="-.037" y="-.051" color-interpolation-filters="sRGB">
+      <feFlood flood-color="#000" flood-opacity="1" result="flood"/>
+      <feComposite in="flood" in2="SourceGraphic" operator="in" result="composite1"/>
+      <feGaussianBlur in="composite1" result="blur" stdDeviation="1"/>
+      <feOffset dy=".5" result="offset"/>
+      <feComposite in="SourceGraphic" in2="offset" result="composite2"/>
+    </filter>
+  </defs>
+  <path fill="#2b90d9" d="M115.73 78.427c-1.473 7.583-13.2 15.88-26.668 17.489-7.023.838-13.937 1.608-21.31 1.27-12.059-.553-21.574-2.878-21.574-2.878a24.4 24.4 0 0 0 .217 3.337c1.568 11.9 11.8 12.613 21.493 12.945 9.783.335 18.494-2.412 18.494-2.412l.402 8.844s-6.843 3.675-19.033 4.35c-6.721.37-15.068-.168-24.789-2.741C21.88 113.05 18.253 90.577 17.7 67.773c-.17-6.77-.065-13.154-.065-18.494 0-23.317 15.277-30.152 15.277-30.152 7.704-3.538 20.922-5.025 34.664-5.138h.337c13.742.113 26.97 1.6 34.672 5.138 0 0 15.277 6.835 15.277 30.152 0 0 .192 17.204-2.13 29.148" filter="url(#a)"/>
+  <path fill="#fff" d="M99.84 51.088v28.234H88.656V51.918c0-5.777-2.43-8.709-7.292-8.709-5.375 0-8.07 3.479-8.07 10.356v15h-11.12v-15c0-6.877-2.694-10.356-8.069-10.356-4.862 0-7.292 2.932-7.292 8.71v27.403H35.626V51.088c0-5.77 1.47-10.355 4.42-13.748 3.044-3.392 7.03-5.131 11.977-5.131 5.724 0 10.058 2.2 12.924 6.6l2.786 4.67 2.787-4.67c2.866-4.4 7.2-6.6 12.925-6.6 4.947 0 8.932 1.739 11.976 5.131 2.95 3.393 4.42 7.978 4.42 13.748" filter="url(#b)"/>
+</svg>
+

@@ -1,0 +1,5 @@
+{
+    "include": [
+        "~/.config/waybar/custom/power_btn/default.json"
+  ]
+}

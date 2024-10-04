@@ -1,0 +1,113 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "general": {
+        "multithreading": true
+    },
+    "display": {
+        "constants": [
+            "MSI", // {$1}
+        ],
+        "stat": false,
+        "separator": " ",
+        "size": {
+            "binaryPrefix": "si"
+        },
+        "color": "blue",
+        "key": {
+            "width": 11,
+            "type": "string"
+        }
+    },
+    "logo": {
+        "type": "none",
+        "source": "arch_small",
+        "width": 4,
+        "position": "top",
+        "color": {
+            "1": "blue",
+            "2": "blue"
+        },
+        "padding": {
+            "left": 0,
+            "top": 1,
+            "right": 1
+        }
+    },
+    "modules": [
+        "break",
+        {
+            "type": "os",
+            "key": " ",
+            "format": "{#34}{3} {12}"
+        },
+        {
+            "type": "kernel",
+            "key": "├kernel",
+            "format": ""
+        },
+        {
+            "type": "shell",
+            "key": "├shell",
+            "format": "{1}"
+        },
+        {
+            "type": "editor",
+            "key": "├editor",
+            "format": "{2}"
+        },
+        {
+            "type": "packages",
+            "key": "└packages"
+        },
+        "break",
+        {
+            "type": "host",
+            "key": " ",
+            "format": "{#34}MSI {2}"
+        },
+        {
+            "type": "cpu",
+            "temp": true,
+            "key": "├cpu",
+            "format": "{1} ({5}) @ {7} ({8})"
+        },
+        {
+            "type": "gpu",
+            "temp": false,
+            "key": "├gpu",
+            "format": "{2} {?4}({4}){?}"
+        },
+        {
+            "type": "memory",
+            "key": "├mem",
+            "format": "{4} {1} / {2}\t({3})"
+        },
+        {
+            "type": "disk",
+            "key": "├disk",
+            "showExternal": true,
+            "showHidden": false,
+            "showSubvolumes": false,
+            "showReadOnly": false,
+            "showUnknown": false,
+            "useAvailable": false,
+            "format": "{10}  \t{} / {}\t({})"
+        },
+        {
+            "type": "localip",
+            "key": "├ip",
+            "format": "LAN   \t{1}"
+        },
+        {
+            "type": "uptime",
+            "key": "└uptime",
+            "format": "{1} Tage {2} Stunden {3} Min."
+        },
+        {
+            "type": "custom", // InformationEnd
+            "format": "\u001b[31m  ═══\u001b[91m═══\u001b[0m\u001b[32m  ═══\u001b[92m═══\u001b[0m\u001b[33m  ═══\u001b[93m═══\u001b[0m\u001b[34m  ═══\u001b[94m═══\u001b[0m\u001b[35m  ═══\u001b[95m═══\u001b[0m\u001b[36m  ═══\u001b[96m═══\u001b[0m\u001b[37m  ═══\u001b[97m═══" // `\u001b` is `\033`, or `\e`
+        },
+        "break"
+    ]
+}
+// vim:set softtabstop=4 shiftwidth=4 tabstop=4 expandtab:

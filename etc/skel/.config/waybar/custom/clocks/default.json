@@ -1,0 +1,7 @@
+{
+    "custom/clock": {
+        "format": "{}",
+        "interval": 60,
+        "exec": "date +'%H:%M'",
+    }
+}

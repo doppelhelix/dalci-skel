@@ -1,0 +1,20 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "doppelhelix@gmail.com",
+                "Name": "Doppelhelix"
+            }
+        ],
+        "Category": "",
+        "Description": "Breeze with Papirus Icons",
+        "Id": "org.kde.breeze-papirus-light.desktop",
+        "License": "GPLv2+",
+        "Name": "Breeze Papirus",
+        "Website": "https://www.kde.org"
+    },
+    "Keywords": "Desktop;Workspace;Appearance;Look and Feel;Logout;Lock;Suspend;Shutdown;Hibernate;",
+    "Keywords[de]": "Desktop;Arbeitsfläche;Arbeitsbereich;Erscheinungsbild;Erscheinungsbild und Verhalten;Abmelden;Sperren;Standby;Ruhezustand;Tiefschlaf;Herunterfahren;",
+    "X-Plasma-APIVersion": "2"
+}

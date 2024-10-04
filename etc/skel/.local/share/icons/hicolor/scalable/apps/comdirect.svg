@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="icon-comdirectapp" version="1.1" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <defs>
+  <style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{fill:#28373c;}.cls-4{fill:url(#comdirect_Impulsverlauf);}.cls-5{fill:#fff500;}</style>
+  <clipPath id="clip-path">
+   <path class="cls-1" d="M0,32C0,10.46,10.42,0,32,0H88c21.54,0,32,10.42,32,32V88c0,21.54-10.42,32-32,32H32C10.46,120,0,109.58,0,88Z"/>
+  </clipPath>
+  <linearGradient id="comdirect_Impulsverlauf" x2="120" y1="60" y2="60" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#00e1af" offset="0"/>
+   <stop stop-color="#34e58b" offset=".11"/>
+   <stop stop-color="#69e967" offset=".24"/>
+   <stop stop-color="#97ed47" offset=".37"/>
+   <stop stop-color="#bcf02e" offset=".5"/>
+   <stop stop-color="#daf21a" offset=".63"/>
+   <stop stop-color="#eef40b" offset=".75"/>
+   <stop stop-color="#fbf503" offset=".88"/>
+   <stop stop-color="#fff500" offset="1"/>
+  </linearGradient>
+  <filter id="filter2233" x="-.022161" y="-.022161" width="1.0443" height="1.0536" color-interpolation-filters="sRGB">
+   <feFlood flood-color="rgb(0,0,0)" flood-opacity=".49804" result="flood"/>
+   <feComposite in="flood" in2="SourceGraphic" operator="in" result="composite1"/>
+   <feGaussianBlur in="composite1" result="blur" stdDeviation="1"/>
+   <feOffset dx="2.77556e-17" dy="1" result="offset"/>
+   <feComposite in="SourceGraphic" in2="offset" result="composite2"/>
+  </filter>
+ </defs>
+ <title>180104-cd-icons-nko</title>
+ <g filter="url(#filter2233)">
+  <g class="cls-2" transform="matrix(.9025 0 0 .9025 5.85 5.85)" clip-path="url(#clip-path)">
+   <rect class="cls-3" x=".75" y=".75" width="118.5" height="118.5" rx="31.25" ry="31.25"/>
+   <path class="cls-4" d="m120 0h-120v120h120zm-3 88c0 10-2.3 17.22-7 22s-11.92 7-22 7h-56c-10 0-17.22-2.3-22-7s-7-11.95-7-22v-56c0-10 2.3-17.22 7-22s11.95-7 22-7h56c10 0 17.22 2.3 22 7s7 11.92 7 22z" fill="url(#comdirect_Impulsverlauf)"/>
+  </g>
+  <path class="cls-5" d="M23.86,75.93a37.92,37.92,0,0,0,8.51,12.54,39.2,39.2,0,0,0,12.94,8.27,43.55,43.55,0,0,0,16.28,3,44.74,44.74,0,0,0,17.72-3.43,38.72,38.72,0,0,0,13.89-10L82.68,73.06a32.18,32.18,0,0,1-9.38,7.22A25.35,25.35,0,0,1,61.59,83a23.69,23.69,0,0,1-8.94-1.67,22.29,22.29,0,0,1-7.22-4.67,21,21,0,0,1-4.79-7.23,24.48,24.48,0,0,1-1.71-9.34,24.8,24.8,0,0,1,1.71-9.37,21.37,21.37,0,0,1,12-12.11A23.69,23.69,0,0,1,61.59,37a24.83,24.83,0,0,1,11.66,2.8,33.08,33.08,0,0,1,9.42,7.35L93.21,33.86a40.29,40.29,0,0,0-13.89-10,43.53,43.53,0,0,0-17.72-3.56,42.91,42.91,0,0,0-16.28,3,39.23,39.23,0,0,0-12.94,8.34,38.19,38.19,0,0,0-8.51,12.62,40.52,40.52,0,0,0-3.07,15.85,40.24,40.24,0,0,0,3.07,15.81"/>
+ </g>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:title>180104-cd-icons-nko</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+</svg>

@@ -1,0 +1,5 @@
+[MIME Cache]
+application/java-archive=java-java-openjdk.desktop;
+application/x-jar=java-java-openjdk.desktop;
+application/x-java-archive=java-java-openjdk.desktop;
+text/plain=org.kde.kwrite.desktop;

@@ -1,0 +1,7 @@
+{
+    "custom/keyboard": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "~/.config/hypr/scripts/keyhint"
+    }
+}

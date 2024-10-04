@@ -1,0 +1,14 @@
+[Unit]
+Description=Authentication agent
+Documentation=https://wiki.archlinux.org/title/Polkit
+
+PartOf=hyprland-session.target
+After=hyprland-session.target
+
+[Service]
+Type=exec
+ExecStart=/usr/lib/polkit-kde-authentication-agent-1
+ExecStop=pkill -f polkit-kde-authentication-agent-1
+
+[Install]
+WantedBy=hyprland-session.target

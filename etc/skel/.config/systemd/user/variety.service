@@ -1,0 +1,15 @@
+[Unit]
+Description=Variety Wallpaper Changer
+Documentation=https://peterlevi.com/variety/
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+#ExecStartPre=/bin/sleep 1
+RemainAfterExit=yes
+ExecStart=variety
+ExecStop=variety --quit
+Slice=app-graphical.slice
+
+[Install]
+WantedBy=graphical-session.target

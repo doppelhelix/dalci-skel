@@ -1,0 +1,17 @@
+[Unit]
+Description=Authentication agent
+Documentation=https://wiki.archlinux.org/title/Polkit
+
+PartOf=graphical-session.target
+After=graphical-session.target
+Requisite=graphical-session.target
+
+[Service]
+Type=exec
+ExecCondition=/lib/systemd/systemd-xdg-autostart-condition "wlroots:sway:Wayfire:labwc:Hyprland" ""
+ExecStart=/usr/lib/mate-polkit/polkit-mate-authentication-agent-1
+ExecStop=pkill -f polkit-mate-authentication-agent-1
+Slice=app-graphical.slice
+
+[Install]
+WantedBy=graphical-session.target

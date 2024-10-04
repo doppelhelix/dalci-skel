@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512">
+  <defs>
+    <filter style="color-interpolation-filters:sRGB" id="a">
+      <feFlood flood-opacity=".498" flood-color="#000" result="flood"/>
+      <feComposite in="flood" in2="SourceGraphic" operator="out" result="composite1"/>
+      <feGaussianBlur in="composite1" result="blur"/>
+      <feOffset dy="-.5" result="offset"/>
+      <feComposite in="offset" in2="SourceGraphic" operator="atop" result="composite2"/>
+    </filter>
+    <filter id="b" style="color-interpolation-filters:sRGB">
+      <feFlood result="flood" flood-color="#FFF" flood-opacity="1"/>
+      <feComposite result="composite1" operator="out" in2="SourceGraphic" in="flood"/>
+      <feGaussianBlur result="blur" in="composite1"/>
+      <feOffset result="offset" dy=".5"/>
+      <feComposite result="composite2" operator="atop" in2="SourceGraphic" in="offset"/>
+    </filter>
+  </defs>
+  <g transform="matrix(8 0 0 8 0 -4)">
+    <circle r="28" cy="33" cx="32" style="opacity:.2"/>
+    <circle r="28" cy="32" cx="32" style="fill:#e4e4e4"/>
+    <path d="M32 4A28 28 0 0 0 4 32a28 28 0 0 0 .018.492A28 28 0 0 1 32 5a28 28 0 0 1 27.975 27.492A28 28 0 0 0 60 32 28 28 0 0 0 32 4Z" style="opacity:.2;fill:#fff"/>
+  </g>
+  <g transform="matrix(3.44075 0 0 3.44075 91.57 78.423)" style="opacity:1;filter:url(#a)">
+    <path style="fill:#f47920;filter:url(#b)" d="M45.097 13.649c19.333-1.441 40.986 4.584 45.08 18.319.129.617.633 3.328.633 3.328s.108 37.751.117 47.406c-11.233.014-22.48.021-33.707.035-.007-6.354-.013-12.721-.018-19.071-9.448 2.787-29.623 6.84-16.752 19.09-8.153.008-29.727.08-33.531.031C1.988 81.691-.922 74.928.265 68.448c1.075-5.895 4.81-10.033 9.244-12.604 10.867-6.313 26.985-5.962 41.037-9.317 1.837-.441 3.686-.644 5.062-1.58.84-.572 1.184-1.36 1.396-2.626.937-5.701-4.787-7.39-10.139-7.331-1.601.014-3.819.266-5.24.707-.991.297-2.369.945-3.143 1.576-1.626 1.306-2.617 3.166-2.612 6.124l-32.488.032c.387-2.892.887-5.278 1.74-7.525C6.663 31.842 8.711 28.64 11.4 25.75c7.393-7.953 19.374-11.038 33.697-12.101Z"/>
+  </g>
+</svg>
+

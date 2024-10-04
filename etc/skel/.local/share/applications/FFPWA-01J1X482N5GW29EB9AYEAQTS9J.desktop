@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.4
+Name=Home Assistant
+Comment=
+Keywords=;
+Categories=GTK;WebApps;;
+Icon=homeassistant
+Exec=/usr/bin/firefoxpwa site launch 01J1X482N5GW29EB9AYEAQTS9J --protocol %u
+Actions=
+MimeType=
+Terminal=false
+StartupNotify=true
+StartupWMClass=FFPWA-01J1X482N5GW29EB9AYEAQTS9J

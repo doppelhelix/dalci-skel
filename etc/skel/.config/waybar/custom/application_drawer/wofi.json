@@ -1,0 +1,7 @@
+{
+    "custom/application_drawer": {
+        "format": " ",
+        "on-click": "sh -c '(nwg-drawer)' & disown",
+        "tooltip": false
+    }
+}

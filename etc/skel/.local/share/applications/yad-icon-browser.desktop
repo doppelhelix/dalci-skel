@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Icon Browser
+NoDisplay=true
+Comment=Inspect GTK Icon Theme
+Icon=yad
+Exec=yad-icon-browser
+Actions=
+Categories=Development;GTK;kf5-development;
+StartupNotify=true

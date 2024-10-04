@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.4
+Name=Google Maps
+Comment=Komme noch schneller ans Ziel
+Keywords=;
+Categories=GTK;WebApps;;
+Icon=google-maps
+Exec=/usr/bin/firefoxpwa site launch 01HPS2HG8JNMADE4A4FC2KNXKX --protocol %u
+Actions=
+MimeType=
+Terminal=false
+StartupNotify=true
+StartupWMClass=FFPWA-01HPS2HG8JNMADE4A4FC2KNXKX

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Mp3tag
+Icon=mp3tag
+Exec=flatpak run --command=bottles-cli com.usebottles.bottles run -p Mp3tag -b 'Mp3tag' --
+Categories=AudioVideo;AudioVideoEditing
+StartupWMClass=Mp3tag.exe

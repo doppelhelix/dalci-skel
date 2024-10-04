@@ -1,0 +1,59 @@
+<svg width="512" height="512" inkscape:export-filename="/home/bgoglin/SOFT/hwloc/archives/logo/android.png" inkscape:export-xdpi="96" inkscape:export-ydpi="96" inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)" sodipodi:docname="lstopo.svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
+  <defs>
+    <inkscape:perspective inkscape:persp3d-origin="396.85039 : -236.34646 : 1" inkscape:vp_x="0 : -49.259854 : 1" inkscape:vp_y="0 : 1066.6667 : 0" inkscape:vp_z="793.70078 : -49.259854 : 1" sodipodi:type="inkscape:persp3d"/>
+    <inkscape:perspective inkscape:persp3d-origin="0.53333333 : -610.16412 : 1" inkscape:vp_x="0 : -609.98634 : 1" inkscape:vp_y="0 : 1066.6667 : 0" inkscape:vp_z="1.0666667 : -609.98634 : 1" sodipodi:type="inkscape:persp3d"/>
+    <inkscape:perspective inkscape:persp3d-origin="0.53333333 : -610.16412 : 1" inkscape:vp_x="0 : -609.98634 : 1" inkscape:vp_y="0 : 1066.6667 : 0" inkscape:vp_z="1.0666667 : -609.98634 : 1" sodipodi:type="inkscape:persp3d"/>
+    <inkscape:perspective inkscape:persp3d-origin="0.53333333 : -610.16412 : 1" inkscape:vp_x="0 : -609.98634 : 1" inkscape:vp_y="0 : 1066.6667 : 0" inkscape:vp_z="1.0666667 : -609.98634 : 1" sodipodi:type="inkscape:persp3d"/>
+    <inkscape:perspective inkscape:persp3d-origin="0.53333333 : -610.16412 : 1" inkscape:vp_x="0 : -609.98634 : 1" inkscape:vp_y="0 : 1066.6667 : 0" inkscape:vp_z="1.0666667 : -609.98634 : 1" sodipodi:type="inkscape:persp3d"/>
+    <inkscape:perspective inkscape:persp3d-origin="0.53333333 : -610.16412 : 1" inkscape:vp_x="0 : -609.98634 : 1" inkscape:vp_y="0 : 1066.6667 : 0" inkscape:vp_z="1.0666667 : -609.98634 : 1" sodipodi:type="inkscape:persp3d"/>
+    <inkscape:perspective inkscape:persp3d-origin="0.53333333 : -610.16412 : 1" inkscape:vp_x="0 : -609.98634 : 1" inkscape:vp_y="0 : 1066.6667 : 0" inkscape:vp_z="1.0666667 : -609.98634 : 1" sodipodi:type="inkscape:persp3d"/>
+    <filter id="filter1614" x="-.006118" y="-.0061106" width="1.0122" height="1.0148" color-interpolation-filters="sRGB" inkscape:label="Drop Shadow">
+      <feFlood flood-color="rgb(0,0,0)" result="flood"/>
+      <feComposite in="flood" in2="SourceGraphic" operator="in" result="composite1"/>
+      <feGaussianBlur in="composite1" result="blur" stdDeviation="1"/>
+      <feOffset dx="1.94289e-16" dy="1" result="offset"/>
+      <feComposite in="SourceGraphic" in2="offset" result="composite2"/>
+    </filter>
+  </defs>
+  <sodipodi:namedview id="base" bordercolor="#666666" borderopacity="1.0" fit-margin-bottom="0" fit-margin-left="0" fit-margin-right="0" fit-margin-top="0" inkscape:current-layer="layer1" inkscape:cx="292.59395" inkscape:cy="244.96238" inkscape:document-rotation="0" inkscape:document-units="px" inkscape:pagecheckerboard="0" inkscape:pageopacity="1" inkscape:pageshadow="2" inkscape:snap-global="false" inkscape:window-height="1013" inkscape:window-maximized="1" inkscape:window-width="1920" inkscape:window-x="0" inkscape:window-y="31" inkscape:zoom="1.3226521" pagecolor="#ffffff" showgrid="true" showguides="false" units="px">
+    <inkscape:grid empspacing="5" enabled="true" originx="-194.00907" originy="-161.08171" snapvisiblegridlinesonly="true" spacingx="1" spacingy="1" type="xygrid" visible="true"/>
+  </sodipodi:namedview>
+  <g transform="translate(-194.01 -161.08)" inkscape:groupmode="layer" inkscape:label="Calque 1">
+    <g transform="matrix(1.2155 0 0 1.2155 -96.98 -34.624)" filter="url(#filter1614)">
+      <g transform="translate(0 14.159)">
+        <g transform="matrix(1.0184 1.0184 -1.0184 1.0184 416.59 -281.66)">
+          <g fill="#b9e1a3">
+            <path d="m242.59 197.36h175c6.925 0 12.5 5.575 12.5 12.5s-0.16473 12.5-0.16473 12.5h-187.34s-12.669-0.0911-12.567 10.142c-0.10142-10.233 0.0671-19.179 0.0671-22.642 0-6.925 5.575-12.5 12.5-12.5z" sodipodi:nodetypes="ccsczcscc"/>
+            <path d="m242.85 227.62h186.99s0.4516 5.575 0.4516 12.5v144.83c0 6.925-5.575 12.5-12.5 12.5h-174.95c-6.925 0-12.5-5.575-12.5-12.5v-144.83c0-6.925 5.575-12.5 12.5-12.5z" sodipodi:nodetypes="ccccccccc"/>
+          </g>
+          <g fill="#fff">
+            <path d="m338.4 297.45h74.75c2.958 0 5.3393 2.3813 5.3393 5.3393 0 2.958-0.0704 5.3393-0.0704 5.3393h-80.019s-5.4113-0.0389-5.368 4.3321c-0.0433-4.371 0.0287-8.1924 0.0287-9.6713 0-2.958 2.3813-5.3393 5.3393-5.3393z" sodipodi:nodetypes="ccsczcscc"/>
+            <path d="m338.51 310.38h79.873s0.1929 2.3813 0.1929 5.3393v61.861c0 2.958-2.3813 5.3393-5.3393 5.3393h-74.727c-2.958 0-5.3393-2.3813-5.3393-5.3393v-61.861c0-2.958 2.3813-5.3393 5.3393-5.3393z" sodipodi:nodetypes="ccccccccc"/>
+            <path d="m246.89 297.45h74.75c2.958 0 5.3393 2.3813 5.3393 5.3393 0 2.958-0.0704 5.3393-0.0704 5.3393h-80.019s-5.4113-0.0389-5.368 4.3321c-0.0433-4.371 0.0287-8.1924 0.0287-9.6713 0-2.958 2.3813-5.3393 5.3393-5.3393z" sodipodi:nodetypes="ccsczcscc"/>
+            <path d="m247 310.38h79.873s0.1929 2.3813 0.1929 5.3393v61.861c0 2.958-2.3813 5.3393-5.3393 5.3393h-74.727c-2.958 0-5.3393-2.3813-5.3393-5.3393v-61.861c0-2.958 2.3813-5.3393 5.3393-5.3393z" sodipodi:nodetypes="ccccccccc"/>
+          </g>
+          <g transform="translate(2.2949 -.074515)" fill="#868686">
+            <g transform="matrix(.82979 0 0 .82979 -.92128 255.82)">
+              <path d="m304.08 70.428h32.394c1.2819 0 2.3139 1.032 2.3139 2.3139 0 1.2819-0.0305 2.3139-0.0305 2.3139h-34.677s-2.3451-0.01686-2.3263 1.8774c-0.0188-1.8942 0.0124-3.5503 0.0124-4.1912 0-1.2819 1.032-2.3139 2.3139-2.3139z" sodipodi:nodetypes="ccsczcscc"/>
+              <path d="m304.13 76.029h34.614s0.0836 1.032 0.0836 2.3139v26.808c0 1.2819-1.032 2.3139-2.3139 2.3139h-32.384c-1.2819 0-2.3139-1.032-2.3139-2.3139v-26.808c0-1.2819 1.032-2.3139 2.3139-2.3139z" sodipodi:nodetypes="ccccccccc"/>
+            </g>
+            <g transform="matrix(.82979 0 0 .82979 -.92128 290.2)">
+              <path d="m304.08 70.428h32.394c1.2819 0 2.3139 1.032 2.3139 2.3139 0 1.2819-0.0305 2.3139-0.0305 2.3139h-34.677s-2.3451-0.01686-2.3263 1.8774c-0.0188-1.8942 0.0124-3.5503 0.0124-4.1912 0-1.2819 1.032-2.3139 2.3139-2.3139z" sodipodi:nodetypes="ccsczcscc"/>
+              <path d="m304.13 76.029h34.614s0.0836 1.032 0.0836 2.3139v26.808c0 1.2819-1.032 2.3139-2.3139 2.3139h-32.384c-1.2819 0-2.3139-1.032-2.3139-2.3139v-26.808c0-1.2819 1.032-2.3139 2.3139-2.3139z" sodipodi:nodetypes="ccccccccc"/>
+            </g>
+          </g>
+          <g transform="translate(36.934 -.074515)" fill="#868686">
+            <g transform="matrix(.82979 0 0 .82979 -.92128 255.82)">
+              <path d="m304.08 70.428h32.394c1.2819 0 2.3139 1.032 2.3139 2.3139 0 1.2819-0.0305 2.3139-0.0305 2.3139h-34.677s-2.3451-0.01686-2.3263 1.8774c-0.0188-1.8942 0.0124-3.5503 0.0124-4.1912 0-1.2819 1.032-2.3139 2.3139-2.3139z" sodipodi:nodetypes="ccsczcscc"/>
+              <path d="m304.13 76.029h34.614s0.0836 1.032 0.0836 2.3139v26.808c0 1.2819-1.032 2.3139-2.3139 2.3139h-32.384c-1.2819 0-2.3139-1.032-2.3139-2.3139v-26.808c0-1.2819 1.032-2.3139 2.3139-2.3139z" sodipodi:nodetypes="ccccccccc"/>
+            </g>
+            <g transform="matrix(.82979 0 0 .82979 -.92128 290.2)">
+              <path d="m304.08 70.428h32.394c1.2819 0 2.3139 1.032 2.3139 2.3139 0 1.2819-0.0305 2.3139-0.0305 2.3139h-34.677s-2.3451-0.01686-2.3263 1.8774c-0.0188-1.8942 0.0124-3.5503 0.0124-4.1912 0-1.2819 1.032-2.3139 2.3139-2.3139z" sodipodi:nodetypes="ccsczcscc"/>
+              <path d="m304.13 76.029h34.614s0.0836 1.032 0.0836 2.3139v26.808c0 1.2819-1.032 2.3139-2.3139 2.3139h-32.384c-1.2819 0-2.3139-1.032-2.3139-2.3139v-26.808c0-1.2819 1.032-2.3139 2.3139-2.3139z" sodipodi:nodetypes="ccccccccc"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

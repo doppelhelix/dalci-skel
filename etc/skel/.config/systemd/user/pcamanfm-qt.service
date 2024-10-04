@@ -1,0 +1,21 @@
+[Unit]
+Description=pcmanfm-qt file manager
+Documentation=man:pcmanfm-qt(1)
+
+
+PartOf=graphical-session.target
+After=graphical-session.target
+Requisite=graphical-session.target
+
+[Service]
+Type=exec
+ExecCondition=/lib/systemd/systemd-xdg-autostart-condition "wlroots:sway:Wayfire:labwc:Hyprland" ""
+ExecStart=/usr/bin/pcmanfm-qt --daemon-mode
+ExecStop=/usr/bin/pcmanfm-qt --quit
+
+Slice=app-graphical.slice
+
+KillMode=control-group
+
+[Install]
+WantedBy=graphical-session.target

@@ -1,0 +1,16 @@
+[Unit]
+Description=WhatsApp desktop app
+Documentation=https://github.com/eneshecan/whatsapp-for-linux/wiki
+
+After=network-online.target graphical-session.target
+Wants=network-online.target nss-lookup.target
+
+[Service]
+#ExecStartPre=sh -c 'sleep 5 && until ping -c 1 example.com; do sleep 1; done'
+ExecStartPre=/bin/sleep 1
+ExecStart=whatsapp-for-linux
+ExecStop=killall whatsapp-for-linux
+Slice=app-graphical.slice
+
+[Install]
+WantedBy=graphical-session.target

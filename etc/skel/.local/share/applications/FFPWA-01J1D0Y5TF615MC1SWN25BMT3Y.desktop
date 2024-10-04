@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.4
+Name=Parcels
+Comment=
+Keywords=;
+Categories=GTK;WebApps;;
+Icon=FFPWA-01J1D0Y5TF615MC1SWN25BMT3Y
+Exec=/usr/bin/firefoxpwa site launch 01J1D0Y5TF615MC1SWN25BMT3Y --protocol %u
+Actions=
+MimeType=
+Terminal=false
+StartupNotify=true
+StartupWMClass=FFPWA-01J1D0Y5TF615MC1SWN25BMT3Y

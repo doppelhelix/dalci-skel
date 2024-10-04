@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="512" width="512">
+  <defs>
+    <filter id="b" style="color-interpolation-filters:sRGB">
+      <feFlood result="flood" flood-color="#000" flood-opacity=".498"/>
+      <feComposite result="composite1" operator="out" in2="SourceGraphic" in="flood"/>
+      <feGaussianBlur result="blur" in="composite1"/>
+      <feOffset result="offset" dy="-.5"/>
+      <feComposite result="composite2" operator="atop" in2="SourceGraphic" in="offset"/>
+    </filter>
+    <filter id="a" style="color-interpolation-filters:sRGB">
+      <feFlood result="flood" flood-color="#000" flood-opacity=".498"/>
+      <feComposite result="composite1" operator="out" in2="SourceGraphic" in="flood"/>
+      <feGaussianBlur result="blur" in="composite1"/>
+      <feOffset result="offset" dy="-.5"/>
+      <feComposite result="composite2" operator="atop" in2="SourceGraphic" in="offset"/>
+    </filter>
+  </defs>
+  <g transform="matrix(8 0 0 8 0 -4)">
+    <circle style="opacity:.2" cx="32" cy="33" r="28"/>
+    <circle style="fill:#e4e4e4" cx="32" cy="32" r="28"/>
+    <path style="opacity:.2;fill:#fff" d="M32 4A28 28 0 0 0 4 32a28 28 0 0 0 .0176.4922A28 28 0 0 1 32 5a28 28 0 0 1 27.9746 27.4922A28 28 0 0 0 60 32 28 28 0 0 0 32 4Z"/>
+  </g>
+  <path style="fill:#fa7d19;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:.939593;filter:url(#a)" d="M323.511 289.7626h-24.1347v-66.7324h24.1347c18.9646 0 25.7848 8.1134 25.7848 33.3638 0 25.2446-6.8202 33.3686-25.7848 33.3686m90.604-66.7324h38.312v-18.173H406.281c-24.8194 0-35.0128 13.892-35.0128 35.666l-.0171 2.1292c-4.1507-25.6391-19.3804-37.7951-47.2875-37.7951H277.193c-18.8189-37.7412-57.7792-63.66-102.8081-63.66-63.385 0-114.8126 51.4065-114.8126 114.8291 0 63.4074 51.4275 114.7763 114.8126 114.7763 44.7658 0 83.4818-25.563 102.4194-62.873h47.709c11.4232 0 21.666-.6789 32.1566-9.0355 7.5414-5.9993 12.2852-14.431 14.4685-25.4982v34.3985h21.8703l.0314-40.4895h51.6225v-18.0214h-51.6542l.2971-7.2947c0-11.8213 3.5517-18.9587 20.8085-18.9587"/>
+  <path style="fill:#fff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:.939593;filter:url(#b)" d="M225.2263 247.542H239.48c11.3468 0 18.0261-2.275 18.0261-11.8812 0-9.8704-6.6793-12.6305-18.301-12.6305h-48.3503v-18.173h56.2476c28.539 0 32.577 19.9735 32.577 31.1112 0 11.8542-4.8366 30.6567-32.6145 30.6567h-13.8003c-17.2675 0-20.987 6.2424-20.987 18.0543v5.5201h64.5712v17.5951h-86.6306v-25.5734c0-21.7411 10.2263-34.6793 35.0081-34.6793"/>
+</svg>
+

@@ -1,0 +1,50 @@
+* {
+    background-image: none;
+    box-shadow:none;
+}
+window {
+    background-color: rgba(2, 12, 12, 0.1);
+}
+button {
+    background-color: rgba (46, 52, 64, 0.4);
+    border-width: 0px;
+    border-radius: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    color: #ffffff;
+}
+
+button:active, button:focus {
+    background-color: #4c566a;
+    color: #ffffff;
+    outline-style: none;
+}
+
+#lock {
+    border-radius: 1em 0 0 1em;
+    background-image: image(url("icons/lock.png"), url("icons/lock.png"));
+}
+
+#logout {
+    background-image: image(url("icons/logout.png"), url("icons/logout.png"));
+}
+
+#suspend {
+    border-radius: 0 1em 0 0 ;
+    background-image: image(url("icons/suspend.png"), url("icons/suspend.png"));
+}
+
+#hibernate {
+    border-radius: 0 0 0 1em;
+    background-image: image(url("icons/hibernate.png"), url("icons/hibernate.png"));
+}
+
+#shutdown {
+    background-image: image(url("icons/shutdown.png"), url("icons/shutdown.png"));
+}
+
+#reboot {
+    border-radius: 0 1em 1em 0;
+    background-image: image(url("icons/reboot.png"), url("icons/reboot.png"));
+}

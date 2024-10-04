@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.4
+Name=Dashboard - Wolke
+Comment=Dashboard app
+Keywords=;
+Categories=GTK;WebApps;;
+Icon=wolke
+Exec=/usr/bin/firefoxpwa site launch 01HQWQ7XZAXADECACASN2Z1BEQ --protocol %u
+Actions=
+MimeType=
+Terminal=false
+StartupNotify=true
+StartupWMClass=FFPWA-01HQWQ7XZAXADECACASN2Z1BEQ

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Avahi SSH-Server-Browser
+NoDisplay=true
+Comment=Durchsuchen nach Zeroconf-aktivierten SSH-Servern
+Icon=network-wired
+Exec=/usr/bin/bssh
+Actions=
+Categories=GNOME;Network;kf5-internet;

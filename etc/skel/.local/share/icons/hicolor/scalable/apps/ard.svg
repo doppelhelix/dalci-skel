@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512">
+  <defs>
+    <filter id="a" style="color-interpolation-filters:sRGB">
+      <feFlood result="flood" flood-color="#FFF" flood-opacity="1"/>
+      <feComposite result="composite1" operator="out" in2="SourceGraphic" in="flood"/>
+      <feGaussianBlur result="blur" in="composite1"/>
+      <feOffset result="offset" dy="3"/>
+      <feComposite result="fbSourceGraphic" operator="atop" in2="SourceGraphic" in="offset"/>
+      <feColorMatrix values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0" in="fbSourceGraphic" result="fbSourceGraphicAlpha"/>
+      <feFlood result="flood" flood-color="#000" flood-opacity=".2"/>
+      <feComposite result="composite1" operator="in" in="flood" in2="fbSourceGraphic"/>
+      <feGaussianBlur result="blur" in="composite1"/>
+      <feOffset result="offset" dy="3"/>
+      <feComposite result="composite2" in="fbSourceGraphic" in2="offset"/>
+    </filter>
+  </defs>
+  <g transform="matrix(8 0 0 8 0 -4)">
+    <circle r="28" cy="33" cx="32" style="opacity:.2"/>
+    <circle r="28" cy="32" cx="32" style="fill:#e4e4e4"/>
+    <path d="M32 4A28 28 0 0 0 4 32a28 28 0 0 0 .018.492A28 28 0 0 1 32 5a28 28 0 0 1 27.975 27.492A28 28 0 0 0 60 32 28 28 0 0 0 32 4Z" style="opacity:.2;fill:#fff"/>
+  </g>
+  <g style="filter:url(#a)" transform="matrix(.70802 0 0 .70802 42.756 42.393)">
+    <path style="fill:#001a4b;fill-rule:evenodd" d="M301.181 59.318c-132.88 0-242.179 108.668-242.179 241.927.006 134.159 109.296 242.828 242.18 242.828 132.882.004 242.178-108.67 242.178-242.828 0-133.255-109.296-241.927-242.179-241.927zm115.182 357.418v-284.45L129.925 235.079v70.418l94.438-33.926v213.096ZM301.18 17.714c156.486 0 283.465 127.358 283.465 283.531.004 157.091-126.979 284.43-283.465 284.43-156.549 0-283.464-127.339-283.464-284.43 0-156.173 126.915-283.53 283.464-283.53z"/>
+  </g>
+</svg>
+

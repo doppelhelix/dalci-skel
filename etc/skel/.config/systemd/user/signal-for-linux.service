@@ -1,0 +1,14 @@
+[Unit]
+Description=Signal messenger
+Documentation=https://support.signal.org/hc/de
+
+PartOf=hyprland-session.target
+After=hyprland-session.target
+
+[Service]
+Type=exec
+ExecStart=signal-desktop --start-in-tray --no-sandbox --enable-features=UseOzonePlatform --ozone-platform=wayland %U
+ExecStop=killall -s KILL signal-desktop
+
+[Install]
+WantedBy=hyprland-session.target

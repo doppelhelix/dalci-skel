@@ -1,0 +1,14 @@
+[Unit]
+Description=network-manager-applet
+Documentation=man:nm-applet(1)
+
+PartOf=hyprland-session.target
+After=hyprland-session.target
+
+[Service]
+Type=exec
+ExecStart=nm-applet
+ExecStop=killall nm-applet
+
+[Install]
+WantedBy=hyprland-session.target

@@ -1,0 +1,14 @@
+[Unit]
+Description=Authentication agent
+Documentation=https://wiki.archlinux.org/title/Polkit
+
+PartOf=hyprland-session.target
+After=hyprland-session.target
+
+[Service]
+Type=exec
+ExecStart=/usr/bin/lxqt-policykit-agent
+ExecStop=pkill -f lxqt-policykit-agent
+
+[Install]
+WantedBy=hyprland-session.target

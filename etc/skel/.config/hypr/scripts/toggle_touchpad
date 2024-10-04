@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+# shellcheck shell=bash
+
+STATUS_FILE="$XDG_RUNTIME_DIR/touchpad.status"
+
+enable_touchpad() {
+    printf "true" >"$STATUS_FILE"
+    notify-send -h string:x-canonical-private-synchronous:sys-notify -u low "Touchpad: An"
+    # shellcheck disable=SC2016
+    hyprctl keyword '$TOUCHPAD_ENABLED' "true" -r
+}
+
+disable_touchpad() {
+    printf "false" >"$STATUS_FILE"
+    notify-send -h string:x-canonical-private-synchronous:sys-notify -u low "Touchpad: Aus"
+    # shellcheck disable=SC2016
+    hyprctl keyword '$TOUCHPAD_ENABLED' "false" -r
+}
+
+
+toggle_touchpad() {
+    if [ "$(cat "$STATUS_FILE")" = "true" ]; then
+      disable_touchpad
+    else
+      enable_touchpad
+    fi
+}
+
+# Check if the function exists (bash specific)
+if declare -f "$1" >/dev/null; then
+    # call arguments verbatim
+    "$@"
+else
+    # Show a helpful error
+    echo "'$1' is not a known function name" >&2
+    exit 1
+fi
+
+# vim: set ts=4 sw=4 et:

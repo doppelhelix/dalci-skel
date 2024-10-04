@@ -1,0 +1,7 @@
+{
+    "custom/light_dark": {
+        "format": "󰔎",
+        "on-click": "~/.config/hypr/scripts/set_theme switch_color_scheme",
+        "tooltip": false
+    }
+}

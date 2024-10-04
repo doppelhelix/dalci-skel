@@ -1,0 +1,38 @@
+{
+    "include": [
+        "~/.config/waybar/modules.json",
+        "~/.config/waybar/custom-modules.json"
+  ],
+//    "layer": "top",
+//    "position": "top",
+//    "mod": "overlay",
+//    "exclusive": true,
+//    "passthrough": false,
+//    "gtk-layer-shell": true,
+    "height": 34,
+    "spacing": 0,
+
+    "modules-left": [
+        "custom/application_drawer",
+        "hyprland/workspaces",
+        "wlr/taskbar"
+    ],
+
+    "modules-center": [
+        "hyprland/window"
+    ],
+
+    "modules-right": [
+        "tray",
+        "custom/updates",
+        "backlight",
+//        "custom/waybar-mpris",
+        "pulseaudio",
+        "custom/keyboard",
+        "power-profiles-daemon",
+        "battery",
+//        "custom/light_dark",
+        "clock",
+        "custom/power_btn"
+    ]
+}

@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.4
+Name=Pi-hole Admin Console
+Comment=
+Keywords=;
+Categories=GTK;WebApps;;
+Icon=pi-hole
+Exec=/usr/bin/firefoxpwa site launch 01J6H2W1GN3EKVWJ7DPEB1F5AE --protocol %u
+Actions=
+MimeType=
+Terminal=false
+StartupNotify=true
+StartupWMClass=FFPWA-01J6H2W1GN3EKVWJ7DPEB1F5AE

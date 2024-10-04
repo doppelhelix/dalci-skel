@@ -1,0 +1,5 @@
+[D-BUS Service]
+Name=org.kde.StatusNotifierWatcher
+Exec=/usr/bin/waybar
+# comment SystemdService to start waybar directly
+SystemdService=waybar.service

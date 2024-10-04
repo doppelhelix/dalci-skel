@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=TigerVNC viewer
+Comment=TigerVNC viewer
+Icon=tigervnc
+Exec=/usr/bin/vncviewer
+Actions=
+Categories=Arch-Other;Network;

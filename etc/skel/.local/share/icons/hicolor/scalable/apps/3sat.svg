@@ -1,0 +1,26 @@
+<svg width="512" height="512" inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)" sodipodi:docname="3sat.svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
+  <sodipodi:namedview bordercolor="#666666" borderopacity="1.0" inkscape:current-layer="svg35" inkscape:cx="218.42105" inkscape:cy="293.85965" inkscape:pagecheckerboard="0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="1013" inkscape:window-maximized="1" inkscape:window-width="1920" inkscape:window-x="0" inkscape:window-y="31" inkscape:zoom="1.14" pagecolor="#ffffff" showgrid="false"/>
+  <defs>
+    <filter id="a" x="0" y="0" width="1" height="1.0039" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity=".2" result="flood"/>
+      <feComposite in="flood" in2="SourceGraphic" operator="in" result="composite1"/>
+      <feGaussianBlur in="composite1" result="blur"/>
+      <feOffset dy="3" result="offset"/>
+      <feComposite in="SourceGraphic" in2="offset" result="fbSourceGraphic"/>
+      <feColorMatrix in="fbSourceGraphic" result="fbSourceGraphicAlpha" values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"/>
+      <feFlood flood-color="#FFF" result="flood"/>
+      <feComposite in="flood" in2="fbSourceGraphic" operator="out" result="composite1"/>
+      <feGaussianBlur in="composite1" result="blur"/>
+      <feOffset dy="3" result="offset"/>
+      <feComposite in="offset" in2="fbSourceGraphic" operator="atop" result="composite2"/>
+    </filter>
+    <filter id="filter18672" x="-.0027011" y="-.0016113" width="1.0056" height="1.0064" color-interpolation-filters="sRGB" inkscape:label="Drop Shadow">
+      <feFlood flood-color="rgb(86,86,86)" result="flood"/>
+      <feComposite in="flood" in2="SourceGraphic" operator="in" result="composite1"/>
+      <feGaussianBlur in="composite1" result="blur" stdDeviation="2.77556e-17"/>
+      <feOffset dx="1.94289e-16" dy="1" result="offset"/>
+      <feComposite in="SourceGraphic" in2="offset" result="composite2"/>
+    </filter>
+  </defs>
+  <path transform="matrix(1.5513 0 0 1.5513 -141.14 -141.14)" d="m235.29 410.4c-1.73-0.309-6.543-1.15-10.695-1.87-32.452-5.628-63.394-25.828-84.24-54.996l-4.742-6.633 21.775-22.306c11.976-12.268 22.167-22.474 22.646-22.679 0.367 0.428 2.236 3.103 5.56 8.013 14.679 26.25 40.864 41.045 69.199 39.102 34.794-2.386 57.504-27.075 55.745-60.6-0.672-12.79-5.296-23.289-14.86-33.737l-6.712-7.33 22.201-22.202 22.201-22.2 4.598 4.366c7.144 6.785 18.817 21.836 23.65 30.493 18.707 33.508 18.156 76.748-1.423 111.65-8.069 14.384-28.137 34.643-42.498 42.9-21.624 12.434-38.676 17.336-62.902 18.083-8.997 0.277-17.773 0.252-19.503-0.056zm-0.33-163.8c-10.89-10.908-19.802-20.394-19.802-21.081 0-1.59 119.22-120.86 120.04-120.09 0.335 0.316 9.724 9.607 20.866 20.647l20.258 20.071-60.131 60.141c-33.072 33.078-60.423 60.141-60.78 60.141s-9.56-8.924-20.451-19.831zm-67.615-117.95-28.29-28.31h184.92l-56.58 56.62h-71.76z" fill="#e40a22" filter="url(#filter18672)" stroke="#fff" style="mix-blend-mode:normal"/>
+</svg>

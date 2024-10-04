@@ -1,0 +1,23 @@
+{
+    "label" : "lock",
+    "action" : "hyprlock",
+    "text" : "Sperren"
+}
+
+{
+    "label" : "logout",
+    "action" : "~/.local/bin/loginctl-logout.sh logout"
+    "text" : "Abmelden"
+}
+
+{
+    "label" : "shutdown",
+    "action" : "~/.local/bin/loginctl-logout.sh shutdown",
+    "text" : "Herunterfahren"
+}
+
+{
+    "label" : "reboot",
+    "action" : "~/.local/bin/loginctl-logout.sh reboot",
+    "text" : "Neustart"
+}

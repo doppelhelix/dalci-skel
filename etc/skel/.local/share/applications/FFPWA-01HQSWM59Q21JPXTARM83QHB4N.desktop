@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.4
+Name=Haspa
+Comment=Haspa
+Keywords=;
+Categories=GTK;WebApps;Office;
+Icon=sparkasse
+Exec=/usr/bin/firefoxpwa site launch 01HQSWM59Q21JPXTARM83QHB4N --protocol %u
+Actions=
+MimeType=
+Terminal=false
+StartupNotify=true
+StartupWMClass=FFPWA-01HQSWM59Q21JPXTARM83QHB4N

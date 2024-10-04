@@ -1,0 +1,18 @@
+<svg height="512" width="512" xml:space="preserve" y="0" x="0" id="Layer_1" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <style id="style2" type="text/css">
+    .st0{fill:#fbbb05}.st1{fill:#e94335}.st2{fill:#4285f4}.st3{fill:#0f9d58}
+  </style>
+  <g style="fill:gray" id="g846-3" transform="translate(24.764 26.764) scale(1.32135)">
+    <path style="fill:gray" id="path6-6" d="M87.5 79.5c48.3 0 87.5 39.2 87.5 87.5v8H8c-4.4 0-8-3.6-8-8 0-48.3 39.2-87.5 87.5-87.5Z" class="st0"/>
+    <path style="fill:gray" id="path8-7" d="M270.5 87.5c0 48.3-39.2 87.5-87.5 87.5h-8V8c0-4.4 3.6-8 8-8 48.3 0 87.5 39.2 87.5 87.5z" class="st1"/>
+    <path style="fill:gray" id="path10-5" d="M262.5 270.5c-48.3 0-87.5-39.2-87.5-87.5v-8h167c4.4 0 8 3.6 8 8 0 48.3-39.2 87.5-87.5 87.5z" class="st2"/>
+    <path style="fill:gray" id="path12-3" d="M79.5 262.5c0-48.3 39.2-87.5 87.5-87.5h8v167c0 4.4-3.6 8-8 8-48.3 0-87.5-39.2-87.5-87.5z" class="st3"/>
+  </g>
+  <g transform="translate(24.764 24.764) scale(1.32135)" id="g846">
+    <path class="st0" d="M87.5 79.5c48.3 0 87.5 39.2 87.5 87.5v8H8c-4.4 0-8-3.6-8-8 0-48.3 39.2-87.5 87.5-87.5Z" id="path6"/>
+    <path class="st1" d="M270.5 87.5c0 48.3-39.2 87.5-87.5 87.5h-8V8c0-4.4 3.6-8 8-8 48.3 0 87.5 39.2 87.5 87.5z" id="path8"/>
+    <path class="st2" d="M262.5 270.5c-48.3 0-87.5-39.2-87.5-87.5v-8h167c4.4 0 8 3.6 8 8 0 48.3-39.2 87.5-87.5 87.5z" id="path10"/>
+    <path class="st3" d="M79.5 262.5c0-48.3 39.2-87.5 87.5-87.5h8v167c0 4.4-3.6 8-8 8-48.3 0-87.5-39.2-87.5-87.5z" id="path12"/>
+  </g>
+</svg>
+

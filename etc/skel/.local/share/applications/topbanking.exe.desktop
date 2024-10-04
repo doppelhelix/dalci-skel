@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=TopBanking
+Comment=Launch TopBanking using Bottles.
+Icon=banking4
+Exec=flatpak run --command=bottles-cli com.usebottles.bottles run -p TopBanking -b 'Banking4' -- %u
+Actions=Configure;
+Categories=Office;
+StartupWMClass=topbanking.exe
+
+[Desktop Action Configure]
+Name=Configure in Bottles
+Exec=flatpak run com.usebottles.bottles -b 'Banking4'

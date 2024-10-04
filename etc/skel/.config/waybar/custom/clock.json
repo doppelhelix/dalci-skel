@@ -1,0 +1,5 @@
+{
+    "include": [
+        "~/.config/waybar/custom/clocks/default.json"
+  ]
+}

@@ -1,0 +1,183 @@
+/*
+ * █░█░█ ▄▀█ █▄█ █▄▄ ▄▀█ █▀█ ▄▄ █▀ ▀█▀ █▄█ █░░ █▀▀ █▀
+ * ▀▄▀▄▀ █▀█ ░█░ █▄█ █▀█ █▀▄ ░░ ▄█ ░█░ ░█░ █▄▄ ██▄ ▄█
+*/
+
+
+/* -----------------------------------------------------
+ * Colors
+ * ----------------------------------------------------- */
+@define-color pink rgba(255, 0, 255 ,1);
+@define-color black rgba(0, 0, 0 , 1);
+@define-color green rgba(0, 255, 0 , 1);
+@define-color background rgba(46, 46, 46, 1);
+@define-color background_blur rgba(46, 46, 46, 0.5);
+@define-color background_noblur rgba(0, 0, 0, 0);
+@define-color background_active rgba(150, 150, 150, 0.5);
+@define-color active rgba(150, 150, 150, 0.5);
+@define-color text rgba(255, 255, 255 ,1);
+@define-color transparent_noblur rgba(0, 0, 0, 0);
+@define-color attention rgba(233, 45, 77, 1);
+
+/* -----------------------------------------------------
+ * General
+ * ----------------------------------------------------- */
+
+* {
+  all: unset;
+  /* `otf-font-awesome` is required to be installed for icons*/
+  font-family: 'IBM Plex Sans', FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  border: none;
+  border-radius: 0px;
+}
+
+window#waybar {
+  background-color: @background_noblur;
+/*  color: @text; */
+  transition-property: background-color;
+  transition-duration: .25s;
+  border-bottom: 0px solid #ffffff;
+}
+
+
+#custom-application_drawer,
+#custom-waybar-mpris,
+#workspaces,
+#taskbar,
+#window,
+#custom-updates,
+#backlight,
+#pulseaudio,
+#tray,
+#custom-keyboard,
+#custom-light_dark,
+#battery,
+#power-profiles-daemon,
+#clock,
+#custom-clock,
+#custom-power_btn {
+  color: @text;
+  background: @background_blur;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-top: 2px;
+  font-weight: bold;
+}
+
+#custom-application_drawer {
+  margin-left: 10px;
+  border-radius: 10px 0px 0px 10px;
+  padding-left: 10px;
+  padding-right: 0.5em
+}
+
+#custom-power_btn {
+  border-radius: 0px 10px 10px 0px;
+  margin-right: 10px;
+  font-weight: normal;
+}
+#workspaces {
+  border-radius: 0px 10px 10px 0px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+#custom-updates {
+border-radius: 10px 0px 0px 10px;
+padding-left: 20px;
+}
+
+#custom-updates.updated {
+border-radius: 10px 0px 0px 10px;
+padding-left: 20px;
+}
+
+#custom-updates.has-updates {
+color: @attention;
+}
+
+#power-profiles-daemon,
+#custom-keyboard,
+#backlight,
+#pulseaudio,
+#custom-updates,
+#custom-application_drawer,
+#custom-light_dark {
+font-size: 18px;
+}
+
+button {
+  /* Use box-shadow instead of border so the text isn't offset */
+  box-shadow: inset 0 -3px @background_noblur;  /* Avoid rounded borders under each button name */
+  border: none;
+  border-radius: 0;
+  color: @text;
+  padding-left: 1em;
+  padding-right:1em;
+}
+
+button.active {
+  background-color: @background_active;
+  border-radius: 10px;
+}
+
+button:hover {
+  background: @active;
+  box-shadow: inset 0 -3px @background_noblur;
+  border-radius: 10px;
+}
+
+tooltip {
+  background: @background;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: @text;
+}
+
+tooltip label {
+  color: @text;
+  font-weight: bold;
+}
+
+#taskbar{
+border-radius: 10px;
+margin-left: 6em;
+margin-right: 6em;
+}
+
+#taskbar.empty {
+background-color: @background_noblur;
+background: @background_noblur;
+}
+
+#window {
+border-radius: 10px;
+}
+
+window#waybar.empty #window {
+  background-color: @background_noblur;
+  background: @background_noblur;
+}
+
+
+#battery.charging, #battery.plugged {
+    color: @green;
+}
+
+@keyframes blink {
+    to {
+        color: @attention;
+    }
+}
+
+/* Using steps() instead of linear as a timing function to limit cpu usage */
+#battery.critical:not(.charging) {
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

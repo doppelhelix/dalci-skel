@@ -1,0 +1,20 @@
+[Unit]
+Description=Passwortmanager
+Documentation=https://keepassxc.org/docs/
+
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+Environment="QT_QPA_PLATFORM=wayland"
+ExecStartPre=/bin/sleep 2
+#ExecStartPre=timeout 20s sh -c 'while ! pidof waybar >> /dev/null ;do sleep 1 ;done'
+ExecStart=keepassxc --keyfile %h/.gnupg/Keepass/keyfile %h/Nextcloud/Keepass/keepass.kdbx
+ExecStop=pkill keepassxc
+BusName=org.gnome.keyring
+BusName=org.freedesktop.impl.portal.Secret
+BusName=org.freedesktop.secrets
+Slice=app-graphical.slice
+
+[Install]
+WantedBy=graphical-session.target

@@ -1,0 +1,22 @@
+[Unit]
+Description=Mount christian@acer
+Documentation=man:sshfs(1)
+
+After=network-online.target
+Wants=network-online.target nss-lookup.target
+
+StartLimitBurst=3
+StartLimitIntervalSec=120
+
+[Service]
+Type=oneshot
+
+RemainAfterExit=yes
+Restart=on-failure
+RestartSec=2s
+#ExecStartPre=sh -c 'until ping -c 1 fritz.box; do sleep 1; done'
+ExecStart=sshfs christian@acer.fritz.box:/ /media/sshfs/acer/christian@acer -o rw,ServerAliveInterval=10,ServerAliveCountMax=1,_netdev
+ExecStop=fusermount -u /media/sshfs/acer/christian@acer
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,22 @@
+[Unit]
+Description=Mount christian@z-box
+Documentation=man:sshfs(1)
+
+After=network-online.target
+Wants=network-online.target nss-lookup.target
+
+StartLimitBurst=3
+StartLimitIntervalSec=120
+
+[Service]
+Type=oneshot
+
+RemainAfterExit=yes
+Restart=on-failure
+RestartSec=2s
+#ExecStartPre=sh -c 'until ping -c 1 fritz.box; do sleep 1; done'
+ExecStart=sshfs kodi@mini.fritz.box:/ /media/sshfs/mini/kodi@mini -o rw,ServerAliveInterval=10,ServerAliveCountMax=1,_netdev,idmap=user,uid=1001,gid=1001
+ExecStop=fusermount -u /media/sshfs/mini/kodi@mini
+
+[Install]
+WantedBy=default.target

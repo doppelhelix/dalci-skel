@@ -1,0 +1,164 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "general": {
+        "multithreading": true
+    },
+    "display": {
+        "constants": [
+            "MSI", // {$1}
+        ],
+        "stat": false,
+        "separator": " ",
+        "size": {
+            "binaryPrefix": "si"
+        },
+        "color": "blue",
+        "key": {
+            "width": 8,
+            "type": "string",
+            "paddingLeft": 2
+            }
+    },
+    "logo": {
+        "type": "none",
+        "source": "$XDG_CONFIG_HOME/fastfetch/archlinux.png",
+        "width": 10,
+        "position": "right",
+        "color": {
+            "1": "blue",
+            "2": "blue"
+        },
+        "padding": {
+            "left": 4,
+            "top": 4,
+            "right": 4
+        }
+    },
+    "modules": [
+        "break",
+        {
+            "type": "os",
+            "key": "",
+            "keyWidth": 6,
+            "format": "{#34}{3} {12}"
+        },
+        {
+            "type": "kernel",
+            "key": "├",
+            "format": ""
+        },
+        {
+            "type": "shell",
+            "key": "├",
+            "format": "{1}"
+        },
+        {
+            "type": "editor",
+            "key": "├󱞏",
+            "format": "{2}"
+        },
+        {
+            "type": "packages",
+            "key": "└󰏖"
+        },
+        "break",
+        {
+            "type": "wm",
+            "key": "",
+            "keyWidth": 6,
+            "format": "{#34}{2}"
+        },
+        {
+            "type": "lm",
+            "key": "├󰨇",
+            "format": "{1}"
+        },
+        {
+            "type": "terminal",
+            "key": "├",
+            "format": "{1}"
+        },
+        {
+            "type": "terminalfont",
+            "key": "├",
+            "format": "{2}"
+        },
+        {
+            "type": "theme",
+            "key": "├󰉼"
+        },
+        {
+            "type": "icons",
+            "key": "├"
+        },
+        {
+            "type": "cursor",
+            "key": "└󰆿",
+            "format": "{1}"
+        },
+        "break",
+        {
+            "type": "host",
+            "key": "󰌢",
+            "keyWidth": 6,
+            "format": "{#34}{$1} {2}"
+        },
+        {
+            "type": "cpu",
+            "key": "├",
+            "showPeCoreCount": true,
+            "temp": true,
+            "format": "{1} ({5}) @ {6}\t({8})"
+        },
+        {
+            "type": "gpu",
+            "temp": false,
+            "key": "├󰾲",
+            "format": "{2} {?4}({4}){?}"
+        },
+        {
+            "type": "memory",
+            "key": "├",
+            "format": "{4}\t{1} / {2}\t({3})"
+        },
+        {
+            "type": "disk",
+            "key": "├",
+            "showExternal": true,
+            "showHidden": false,
+            "showSubvolumes": false,
+            "showReadOnly": false,
+            "showUnknown": false,
+            "useAvailable": false,
+            "format": "{10}     \t{} / {}\t({})"
+        },
+        {
+            "type": "bluetooth",
+            "key": "├",
+            "format": "{}"
+        },
+        {
+            "type": "gamepad",
+            "key": "├󰺵",
+            "format": "{?1}DualSense Controller{?}"
+        },
+        {
+            "type": "localip",
+            "key": "├󰲐",
+            "format": "{4}    \t{1}"
+        },
+        {
+            "type": "uptime",
+            "key": "└",
+            "format": "{1} Tage {2} Stunden {3} Min."
+        },
+        {
+            "type": "custom",
+            "key": "  ",
+            "keyWidth": 4,
+            "format": "{#31}▄▄▄{#91}▄▄▄ {#32}▄▄▄{#92}▄▄▄ {#33}▄▄▄{#93}▄▄▄ {#34}▄▄▄{#94}▄▄▄ {#35}▄▄▄{#95}▄▄▄ {#36}▄▄▄{#96}▄▄▄ {#37}▄▄▄{#97}▄▄▄"
+        },
+        "break"
+    ]
+}
+// vim:set softtabstop=4 shiftwidth=4 tabstop=4 expandtab:
