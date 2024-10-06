@@ -20,7 +20,7 @@
             # Use 256 colors and UNICODE.
             clear
             #source $HOME/.config/zsh/p10k.zsh
-            [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+            [[ ! -f ~/.config/zsh/p10k.zsh ]] || source ~/.config/zsh/p10k.zsh
             base16_mocha_neu
             ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=244'
             fastfetch
