@@ -6,18 +6,18 @@
 
 {
     "label" : "logout",
-    "action" : "~/.local/bin/loginctl-logout.sh logout"
+    "action" : "~/.config/hypr/scripts/exit_session logout"
     "text" : "Abmelden"
 }
 
 {
     "label" : "shutdown",
-    "action" : "~/.local/bin/loginctl-logout.sh shutdown",
+    "action" : "~/.config/hypr/scripts/exit_session shutdown",
     "text" : "Herunterfahren"
 }
 
 {
     "label" : "reboot",
-    "action" : "~/.local/bin/loginctl-logout.sh reboot",
+    "action" : "~/.config/hypr/scripts/exit_session reboot",
     "text" : "Neustart"
 }
